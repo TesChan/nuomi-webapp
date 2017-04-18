@@ -1,0 +1,669 @@
+/*main.css*/
+html{
+    font-size: 62.5%;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: #F1F1F1;
+    min-width:280px;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*header && search-box start--------------------------------------*/
+/*
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:6%;
+    background: rgba(0,0,0,0.5);
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+
+header a{
+    color: #fff;
+    opacity:.6;
+}
+
+header h3{
+    flex:1 1 auto;
+    align-self: stretch;
+    margin:0 auto;
+}
+*/
+
+.header{
+    position: fixed;
+    width:100%;
+    height:45px;
+    background-color: rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+}
+
+.header .location{/*地点*/
+    flex:0 1 62px;
+    height:45px;
+    line-height: 45px;
+    padding:0 0 0 10px;
+}
+
+.header .location span{
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.header .location span::after{
+    content: '';
+    display: inline-block;
+    border-right: 2px solid #ffffff;
+    border-bottom:2px solid #ffffff;
+    border-color: rgba(255,255,255,0.7);
+    width:8px;
+    height:8px;
+    margin-bottom: 2px;
+    margin-left: 4px;
+    box-sizing: border-box;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.search{/*搜索栏*/
+    top:0;
+    left:0;
+    flex:1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:45px;
+}
+
+.search form{
+    margin:8px auto;
+    padding:5px;
+    flex:1 1 auto;
+    display: flex;
+    justify-content:space-between;
+    box-sizing: border-box;
+    height:28px;
+    line-height:28px;
+    background: #fff;
+    border-radius: 1.5rem;
+    display: flex;
+
+}
+
+.search form input{
+    flex:1 1 auto;
+    border:none;
+    outline:none;
+    font-size: 1.4rem;
+    padding: 7px 0 6px 5px;
+    order:1;
+    align-items: center;
+}
+
+.search form button{
+    border:none;
+    order:0;
+    width:30px;
+    height:100%;
+    background: url(../img/icon_search.png) center center no-repeat;
+    background-size:13px;
+}
+
+.header .login{/*登录icon*/
+    height:45px;
+    flex:0 1 30px;
+    text-align: center;
+}
+
+.header .login i{
+    background:url(../img/icon_login.png) center no-repeat;
+    background-size: 16px 18px;
+    width:16px;
+    height:45px;
+    display: inline-block;
+}
+
+/*banner start---------------------------------------------------*/
+.adv{
+    width:100%;
+    background: url(../img/banner_01.jpg) center no-repeat;
+    background-size: cover;
+    height:20%;
+}
+
+/*nav areas start-------------------------------------------------*/
+
+.category{
+    width:100%;
+    height:27.5%;
+    background: #ffffff;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+}
+
+
+.category ul{
+    width:100%;
+    height:93%;
+    margin:5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.category ul li{
+    width:100%;
+    height:38.2%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.category ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.category ul li a img{
+    width:4rem;
+    height:4rem;
+    margin-bottom: .5rem;
+}
+
+.category .pointers{
+    margin:0 auto;
+    height:4%;
+    width:100% ;
+}
+/*top brands area start------------------------------------------*/
+.top-brands-area{
+    width:100%;
+    height:20.5%;
+    background: #ffffff;
+    margin-top: 1rem;
+}
+
+.top-brands-area .top-brands-left{  /*左边活动框*/
+    width:50%;
+    height:100%;
+    float: left;
+    border-right:1px solid #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+.top-brands-area .top-brands-left a{
+    display: block;
+    width:100%;
+    height:50%;
+    padding:5px 0 5px 10px;
+
+}
+
+.top-brands-area .top-brands-left a .sales-1{/*左活动框上半部分*/
+    width:100%;
+    height:100%;
+    background: url(../img/topbrands_01.jpg) center right no-repeat;
+    background-size: 70px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.top-brands-area .top-brands-left a .sales-1 h3{
+    color: #0082FF;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.top-brands-area .top-brands-left a .sales-1 h4{
+    color: #3c3c3c;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.top-brands-area .top-brands-left a .sales-1 div{
+    margin-top: 6px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 15px;
+    border: 1px solid #4ca4fe;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:45px;
+    padding:1px;
+}
+
+.top-brands-area .top-brands-left a .sales-1 div span{
+    text-decoration: none;
+    color: #4ca4fe;;
+}
+
+.top-brands-area .top-brands-left .sales-2{/*左活动框下半部分*/
+    width:100%;
+    height:100%;
+    background: url(../img/topbrands_02.jpg) center right no-repeat;
+    background-size: 70px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 1px solid #EEEEEE;
+}
+
+.top-brands-area .top-brands-left a .sales-2 h3{
+    color: orange;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.top-brands-area .top-brands-left a .sales-2 h4{
+    color:#3c3c3c;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.top-brands-area .top-brands-left a .sales-2 div{
+    margin-top: 6px;
+    vertical-align: middle;
+    display: inline-block;
+    height: 15px;
+    border: 1px solid orange;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:45px;
+    padding:1px;
+}
+
+.top-brands-area .top-brands-left a .sales-2 div span{
+    text-decoration: none;
+    color: orange;
+}
+
+.top-brands-area .top-brands-right{
+    width:50%;
+    height:100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -5px;
+}
+
+.top-brands-area .top-brands-right .sales3-banner{
+    width:100%;
+    height:33px;
+    background: url(../img/countDownBanner.png) center center no-repeat;
+    background-size: 100% auto;
+
+}
+
+.top-brands-area .top-brands-right .sales3-img{
+    background: url(../img/logo_KFC.jpg) center center no-repeat;
+    background-size: 90px auto;
+    width:100%;
+    height:54px;
+    margin-top: 5px;
+}
+
+.top-brands-area .top-brands-right h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.top-brands-area .top-brands-right p{
+    font-size: 1.6rem;
+    color: orange;
+}
+
+/*operations section start*/
+.operation{
+    margin-top: 1rem;
+    width:100%;
+    height:20%;
+    background-color: #ffffff;
+}
+
+.operation .operation-left{ /*左边活动框*/
+    float: left;
+    width:50%;
+    height:99%;
+    background: url(../img/operation_01.jpg) center bottom no-repeat;
+    background-size: 88px 88px;
+    border-right: 1px solid #EEEEEE;
+    padding:1rem .5rem;
+}
+
+.operation .operation-left h4{
+    color: #0082FF;
+    margin-bottom: .5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.operation .operation-left p{
+    color: #999;
+    font-size: 1.4rem;
+}
+
+.operation .operation-right{    /*右边活动框*/
+    float: right;
+    width:50%;
+    height:100%;
+}
+
+.operation .operation-right .activity-2{
+    display: block;
+    width:100%;
+    height:49%;
+    padding:0.5rem;
+    border-bottom: 2px solid #eee;
+    background: url(../img/operation_02.jpg) center right no-repeat;
+    background-size: auto 100%;
+    padding:1rem .5rem;
+}
+
+.operation .operation-right h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: .5rem;
+}
+
+.operation .operation-right p{
+    font-size: 1.4rem;
+    color: #999;
+}
+
+
+.operation .operation-right .activity-3{
+    display: block;
+    width:100%;
+    height:49%;
+    padding:0.5rem;
+    background: url(../img/operation_03.jpg) center right no-repeat;
+    background-size: auto 100%;
+    padding:1rem .5rem;
+}
+
+.operation .operation-right .activity-3 h4{
+    color: red;
+}
+/*.recommend section start----------------------------------------*/
+.recommend{
+    width:100%;
+    height:auto;
+    background: #fff;
+    margin-top: 1rem;
+}
+
+.recommend .index-area{
+    width:100%;
+    height:6.3%;
+    background-color: #ffffff;
+    border-bottom:1px solid #FCFCFC;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 5px;
+}
+
+.recommend .index-area h4{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.recommend .index-area a{
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #999;
+    margin-right: 5px;
+}
+
+.recommend .index-area a::after{
+    content: '';
+    display: inline-block;
+    top: -1px;
+    margin-left: 2px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #666;
+    border-right: 1px solid #666;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.recommend .goods-container{/*所有商品*/
+    width:100%;
+}
+
+.recommend .goods-container .good{
+    width:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 12px;
+}
+
+.recommend .goods-container .good .good-content{
+    display: flex;
+    width:100%;
+    height:97px;
+    padding:12px 12px 12px 0;
+    align-items:center;
+}
+
+.recommend .goods-container .good .good-content .img-wrapper{/*左边图片*/
+    position: relative;
+    height:100%;
+    flex:0 1 72px;
+}
+
+.recommend .goods-container .good .good-content .img-wrapper .img-placeholder .tag-reservation{
+    background: url(../img/tag_01.png)no-repeat;
+    position: absolute;
+    top:0;
+    left:0;
+    width:36px;
+    height:36px;
+    background-size: 36px 36px;
+    visibility: visible;
+}
+
+.recommend .goods-container .good .good-content .info-wrapper{/*右边各项说明*/
+    height:100%;
+    margin-left: 1rem;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.recommend .goods-container .good .good-content .info-wrapper .title-line {/*商品名称行*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.recommend .goods-container .info-wrapper .title-line .title .item-name{
+    color: #000;
+    font-size: 1.6rem;
+}
+
+.recommend .goods-container .info-wrapper .title-line .store{
+    font-size: 1.1rem;
+    color:#999;
+}
+
+.recommend .goods-container .info-wrapper .title-line .distance{
+    font-size: 1.1rem;
+    color:#999;
+}
+
+.recommend .goods-container .info-wrapper .desc{
+    margin-top:5px;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.recommend .goods-container .info-wrapper .price-line{
+    margin-top:5px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.recommend .goods-container .info-wrapper .price-line ins{
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: #FF4783;
+    font-weight: 600;
+}
+
+.recommend .goods-container .info-wrapper .price-line ins::before{
+    font-size: 1.6rem;
+    content: '￥';
+    margin-right: -4px;
+}
+
+.recommend .goods-container .info-wrapper .price-line .origin-price{
+    font-size: 1.1rem;
+    color: #999;
+}
+
+.recommend .goods-container .info-wrapper .price-line .brought{
+    font-size: 1.1rem;
+    color: #999;
+}
+/*footer section start---------------------------------------------*/
+
+footer{
+    width:100%;
+    height:21%;
+    background: #EEEEEE;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:space-around;
+    padding:0 1rem;
+}
+
+footer .nav-info{
+    width:100%;
+    height:37.5%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items:center;
+    font-size: 1.3rem;
+}
+
+footer .nav-info .city{ /*城市选择*/
+    width:35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .nav-info .city .city-lable{
+    width:50%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+footer .nav-info .city .city-link{
+    width:50%;
+    display: inline-block;
+    border:1px solid #DCDCDD;
+    text-align: center;
+    border-radius: .5rem;
+    color: #000;
+    padding:4px 0;
+    overflow: hidden;
+}
+
+footer .nav-info .user{ /*登录注册*/
+    width:35%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .nav-info .user a{
+    width:40%;
+    border:1px solid #DCDCDD;
+    text-align: center;
+    padding:4px 0;
+    border-radius: .5rem;
+    color: #000;
+}
+
+footer .link{   /*分类连接*/
+    margin-top: 2rem;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+footer .link a{
+    border-right: 1px solid #E1E1E1;
+    padding-right:2rem;
+    color: #000;
+}
+
+footer .authorise{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer .authorise{
+    display: block;
+}
+
+footer .authorise .copy-right{
+    text-align: center;
+    color: #BBBBBD;
+    font-size: 1.2rem;
+}
+
+footer .authorise .record{
+    text-align: center;
+}
